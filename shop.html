@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Shop.Niva</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="nav-logo"><a href="index.html">Shop.Niva</a></div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="nav-icon" id="searchBtn">🔍</button>
+                    <a href="cart.html" class="nav-icon">🛒 <span class="cart-count">0</span></a>
+                    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="shop-section">
+        <div class="container">
+            <div class="shop-header">
+                <h1>All Products</h1>
+                <div class="shop-controls">
+                    <select id="sortSelect">
+                        <option>Sort by: Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Newest First</option>
+                    </select>
+                    <button class="filter-toggle" id="filterToggle">Filters</button>
+                </div>
+            </div>
+
+            <div class="shop-layout">
+                <aside class="shop-sidebar" id="shopSidebar">
+                    <div class="filter-group">
+                        <h3>Categories</h3>
+                        <label><input type="checkbox" value="shoulder-bags"> Shoulder Bags</label>
+                        <label><input type="checkbox" value="handbags"> Handbags</label>
+                        <label><input type="checkbox" value="clutches"> Clutches</label>
+                        <label><input type="checkbox" value="accessories"> Accessories</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Price Range</h3>
+                        <label><input type="radio" name="price" value="all" checked> All Prices</label>
+                        <label><input type="radio" name="price" value="under-1000"> Under ₹1,000</label>
+                        <label><input type="radio" name="price" value="1000-2000"> ₹1,000 - ₹2,000</label>
+                        <label><input type="radio" name="price" value="above-2000"> Above ₹2,000</label>
+                    </div>
+                </aside>
+
+                <div class="shop-products">
+                    <div class="products-grid" id="shopProducts"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Shop.Niva</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919876543210" class="whatsapp-float">💬</a>
+    <script src="js/main.js"></script>
+</body>
+</html>

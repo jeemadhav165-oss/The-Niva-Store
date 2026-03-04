@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Shop.Niva</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="nav-logo"><a href="index.html">Shop.Niva</a></div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="cart-section">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <div class="cart-layout">
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items loaded by JS -->
+                </div>
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">₹0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span id="shipping">₹99</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="total">₹0</span>
+                    </div>
+                    <a href="checkout.html" class="btn btn-primary btn-block">Proceed to Checkout</a>
+                    <a href="shop.html" class="btn btn-outline btn-block">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2026 Shop.Niva</p></div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

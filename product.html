@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - Shop.Niva</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="nav-logo"><a href="index.html">Shop.Niva</a></div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="cart.html" class="nav-icon">🛒 <span class="cart-count">0</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="product-section">
+        <div class="container">
+            <div class="product-layout">
+                <div class="product-images">
+                    <div class="main-image" id="mainImage"></div>
+                    <div class="thumbnail-images" id="thumbnails"></div>
+                </div>
+                <div class="product-details">
+                    <h1 id="productName">Stylish Shoulder Bag</h1>
+                    <div class="product-rating">★★★★★ (48 reviews)</div>
+                    <div class="product-price">
+                        <span class="current-price" id="productPrice">₹1,299</span>
+                        <span class="original-price">₹1,799</span>
+                        <span class="discount">28% OFF</span>
+                    </div>
+                    <p class="product-description" id="productDesc">
+                        Premium quality shoulder bag perfect for daily use. Features multiple compartments, 
+                        adjustable strap, and elegant design.
+                    </p>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <div class="color-options">
+                                <button class="color-btn active" data-color="black">Black</button>
+                                <button class="color-btn" data-color="brown">Brown</button>
+                                <button class="color-btn" data-color="beige">Beige</button>
+                            </div>
+                        </div>
+                        <div class="option-group">
+                            <label>Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="qty-btn" id="qtyMinus">-</button>
+                                <input type="number" id="quantity" value="1" min="1">
+                                <button class="qty-btn" id="qtyPlus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-block" id="addToCartBtn">Add to Cart</button>
+                        <button class="btn btn-outline btn-block">Add to Wishlist ❤️</button>
+                    </div>
+                    <div class="product-meta">
+                        <p>✓ Free shipping on orders above ₹999</p>
+                        <p>✓ Cash on Delivery available</p>
+                        <p>✓ Easy 7-day returns</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2026 Shop.Niva</p></div>
+    </footer>
+    <a href="https://wa.me/919876543210" class="whatsapp-float">💬</a>
+    <script src="js/main.js"></script>
+</body>
+</html>
